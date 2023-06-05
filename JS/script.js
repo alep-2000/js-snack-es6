@@ -110,5 +110,53 @@ const bikes = [
     }
 ];
 
-const {weight} = bikes;
+const {weight} = bikes[2];
 console.log(`Weight: ${weight}`);
+
+// SNACK 4
+// FUNCTION
+function randomNumber(min, max){
+    let number = Math.floor(Math.random() * (max - min + 1) + min);
+    
+    return number;
+}
+// ARRAY FOOTBAL_TEAM
+const football_team = [
+    {
+        name: 'Juventus',
+        points_made: 0,
+        fail_immediately: 0
+    },
+    {
+        name: 'Barcellona',
+        points_made: 0,
+        fail_immediately: 0
+    },
+    {
+        name: 'Real Madrid',
+        points_made: 0,
+        fail_immediately: 0
+    },
+    {
+        name: 'Roma',
+        points_made: 0,
+        fail_immediately: 0
+    },
+    {
+        name: 'Napoli',
+        points_made: 0,
+        fail_immediately: 0
+    },
+    {
+        name: 'Cagliari',
+        points_made: 0,
+        fail_immediately: 0
+    }
+];
+
+console.log(football_team);
+
+for(let i=0; i< football_team.length; i++){
+    console.log(randomNumber(1, 100));
+}
+
