@@ -40,3 +40,35 @@ SOLUZIONE:
     4.1 - Utilizzare un controllo if:
         4.1.1 - ? SE lo studente ha un voto più alto di 70 e un id superiore a 120 inserisci nell'array;
         4.1.2 - : ALTRIMENTI non inserirlo;
+
+
+SNACK 3
+PROBLEMA:
+Creare un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Stampare in console la bici con peso minore utilizzando destructuring e template literal
+
+SOLUZIONE:
+1 - Creare array di oggetti;
+    1.1 - Aggiungere le proprietà nome e peso ad ogni oggetto;
+2 - Determinare la bici con peso minore;
+3 - Stamparla in console;
+
+SNACK 4 
+PROBLEMA: 
+Creare un array di oggetti di squadre di calcio.
+Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+Nome sarà l'unica proprietà da compilare, le altre saranno tutte settate a 0.
+Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti.
+Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+SOLUZIONE:
+1 - Creare un array di oggetti;
+    1.1 - Inserire per ogni oggetto le proprietà nome, punti fatti, falli subiti;
+    1.2 - Compilare solamente la proprità nome;
+    1.3 - Settare a 0 le proprietà punti fatti e falli subiti;
+2 - Generare un ciclo for;
+    2.1 - Creare una funzione per generare numeri random;
+    2.2 - Mostrarli nelle proprietà punti fatti e falli subiti;
+3 - Creare un nuovo array contenenti le proprietà nome e falli subiti;
+    3.1 - Stamparlo in console;
