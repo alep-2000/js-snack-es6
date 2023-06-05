@@ -13,9 +13,10 @@ let arrayObje = invited.map((item,index) =>{
         'name': item,
         'place_occuped': index + 1
     }
-    return obj
+    return obj;
 })
 
+console.log(arrayObje);
 // SNACK 2
 // ARRAY STUDENTS
 const students = [
@@ -53,16 +54,11 @@ const students = [
         'id': '120',
         'name': 'Francesca da Polenta',
         'grades': '84'
-    },
+    }
 ]
 
 // UPPERCASE ARRAY
-let uppercase_array = students.map((item) => {
-    let name = item.toLowerCase();
-    let newName = name[0].toUpperCase() + name.slice(1);
-    
-    return newName
-});
+let uppercase_array = students.map((item) => item.name.toUpperCase());
 console.log(uppercase_array);
 
 // ARRAY GRADES_PLUS
