@@ -80,3 +80,35 @@ let idGradesPlus = students.filter((item) => {
 })
 
 console.log(idGradesPlus);
+
+// SNACK 3
+// ARRAY BIKE
+const bikes = [
+    {
+        name: 'Mountain bike',
+        weight: 12
+    },
+    {
+        name: 'City bike',
+        weight: 15
+    },
+    {
+        name: 'Racing bike',
+        weight: 7
+    },
+    {
+        name: 'Foldable bike',
+        weight: 15
+    },
+    {
+        name: 'Electric bicycle',
+        weight: 20
+    },
+    {
+        name: 'Gravel bike',
+        weight: 10
+    }
+];
+
+const {weight} = bikes;
+console.log(`Weight: ${weight}`);
