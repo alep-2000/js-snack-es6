@@ -51,7 +51,7 @@ Stampare in console la bici con peso minore utilizzando destructuring e template
 SOLUZIONE:
 1 - Creare array di oggetti;
     1.1 - Aggiungere le proprietà nome e peso ad ogni oggetto;
-2 - Determinare la bici con peso minore;
+2 - Utilizzare destructuring per ricavare la bici ;
 3 - Stamparla in console;
 
 SNACK 4 
