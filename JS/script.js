@@ -1,7 +1,7 @@
 "use strict"
 
-// SNACK 1
-// ARRAY INVITED
+// // SNACK 1
+// // ARRAY INVITED
 const invited = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
 
 
@@ -109,54 +109,79 @@ const bikes = [
         weight: 10
     }
 ];
+console.log(bikes);
 
-const {weight} = bikes[2];
+let biciLeggera = bikes[0];
+for(let i=0; i < bikes.length; i++){
+    if(bikes[i].weight < biciLeggera.weight){
+        biciLeggera = bikes[i];
+    }
+}
+
+let {weight} = biciLeggera;
 console.log(`Weight: ${weight}`);
 
 // SNACK 4
 // FUNCTION
 function randomNumber(min, max){
     let number = Math.floor(Math.random() * (max - min + 1) + min);
-    
     return number;
 }
-// ARRAY FOOTBAL_TEAM
+
+// // ARRAY FOOTBAL_TEAM
 const football_team = [
-    {
-        name: 'Juventus',
-        points_made: 0,
-        fail_immediately: 0
-    },
-    {
-        name: 'Barcellona',
-        points_made: 0,
-        fail_immediately: 0
-    },
-    {
-        name: 'Real Madrid',
-        points_made: 0,
-        fail_immediately: 0
-    },
-    {
-        name: 'Roma',
-        points_made: 0,
-        fail_immediately: 0
-    },
-    {
-        name: 'Napoli',
-        points_made: 0,
-        fail_immediately: 0
-    },
-    {
-        name: 'Cagliari',
-        points_made: 0,
-        fail_immediately: 0
-    }
+        {
+            name: 'Juventus',
+            points_made: 0,
+            fail_immediately: 0
+        },
+        {
+            name: 'Barcellona',
+            points_made: 0,
+            fail_immediately: 0
+        },
+        {
+            name: 'Real Madrid',
+            points_made: 0,
+            fail_immediately: 0
+        },
+        {
+            name: 'Roma',
+            points_made: 0,
+            fail_immediately: 0
+        },
+        {
+            name: 'Napoli',
+            points_made: 0,
+            fail_immediately: 0
+        },
+        {
+            name: 'Cagliari',
+            points_made: 0,
+            fail_immediately: 0
+        }
 ];
 
-console.log(football_team);
+football_team.forEach((element) => {
+    element.points_made = randomNumber(1, 100);
+    element.fail_immediately = randomNumber(1, 100);
+})
 
-for(let i=0; i< football_team.length; i++){
-    console.log(randomNumber(1, 100));
+const newTeams = [];
+
+for(let i=0; i<football_team.length; i++){
+    let currentTeam = football_team[i];
+
+    const {name, fail_immediately} = currentTeam;
+
+    let obj ={
+        name,
+        fail_immediately
+    }
+
+    newTeams.push(obj);
 }
+
+console.log(newTeams);
+
 
